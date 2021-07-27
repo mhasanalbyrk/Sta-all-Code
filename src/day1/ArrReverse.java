@@ -1,4 +1,4 @@
-package com.company;
+package day1;
 
 public class ArrReverse {
     public static void main(String[] args) {
