@@ -1,4 +1,4 @@
-package day2;
+package day2.lab1;
 
 public class Rectangle {
     private int width;

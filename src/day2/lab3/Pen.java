@@ -1,4 +1,4 @@
-package day2;
+package day2.lab3;
 
 public class Pen {
 
