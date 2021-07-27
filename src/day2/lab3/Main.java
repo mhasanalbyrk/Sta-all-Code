@@ -7,14 +7,11 @@ public class Main {
         Shape r = new Rectangle(5, 6, "red");
         Shape c = new Circle(1, "blue");
 
-        if (c instanceof Circle)
-        pen.drawCircle((Circle)c);
-        if (r instanceof Rectangle)
-        pen.drawRectangle((Rectangle) r);
+        pen.drawShape(r);
+        pen.drawShape(c);
 
-        if (c instanceof Circle)
-        pen.changeColorCircle("red", (Circle)c);
-        if (r instanceof Rectangle)
-        pen.changeColorRectangle("blue", (Rectangle)r);
+        pen.changeColor("red",  c);
+        pen.changeColor("blue",  r);
+
     }
 }
