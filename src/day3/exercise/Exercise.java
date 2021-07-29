@@ -27,7 +27,6 @@ public class Exercise {
                 break;
             }
 
-
         }
         if (flag)
         System.out.println("Is  a palindrome");
