@@ -1,0 +1,3 @@
+ul:nth-of-type(2n){
+    background-color: grey;
+}

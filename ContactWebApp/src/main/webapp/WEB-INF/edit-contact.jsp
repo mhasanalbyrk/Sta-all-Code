@@ -21,9 +21,9 @@
         <c:out value="${Contact.getName()} ---- ${Contact.getNumber()}"/>
     <form action="edit-contact-servlet" method="POST">
         <div><label for="name">New Name</label>
-            <input type="text" id="name" name="name"></div>
+            <input type="text" id="name" name="name" value="${Contact.getName()}"></div>
         <div><label for="number"> <br>New Number</label>
-            <input type="text" id="number" name="number" maxlength="10" minlength="10">
+            <input type="text" id="number" name="number" maxlength="10" minlength="10" value="${Contact.getNumber()}">
         </div>
         <input type="text" value="${id}" name="id" hidden>
         <input type="submit" value="Edit">

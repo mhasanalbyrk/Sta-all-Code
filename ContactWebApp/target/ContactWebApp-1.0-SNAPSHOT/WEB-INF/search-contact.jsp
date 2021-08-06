@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Search Contact</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/style.css">
 </head>
 <link rel="stylesheet" href="../style.css">
 <body>
@@ -18,7 +18,7 @@
     <label for="name">Name</label>
     <input type="text" id="name" name="name">
     <input type="submit">
-
+</form>
 <div>
     <c:if test="${Contacts != null}">
 
@@ -28,11 +28,11 @@
             <c:out value=" Name:${contact.getName()}"/>
             <c:out value="| Number:${contact.getNumber()} ->"/>
 
-            <form action="edit-contact-servlet" method="GET" id="form_${contact.getId()}">
-                <label>
-                    <input type="text" value="${contact.getId()}" name="id" hidden>
-                </label>
-                <input type="submit" value="Edit" id="button_${contact.getId()}">
+            <form action="edit-contact-servlet" method="GET" >
+
+                <input type="hidden" value="${contact.getId()}" name="id"  >
+
+                <input type="submit" value="Edit" >
             </form>
             <a href="edit-contact-servlet?id=${contact.getId()}"> Edit </a>
                 <p>
@@ -42,7 +42,6 @@
 
         </c:forEach>
     </c:if>
-</>
-</form>
+</div>
 </body>
 </html>
